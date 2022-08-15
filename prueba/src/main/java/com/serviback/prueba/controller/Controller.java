@@ -1,6 +1,6 @@
 package com.serviback.prueba.controller;
 
-import com.serviback.prueba.controller.model.Persona;
+import com.serviback.prueba.model.Persona;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
