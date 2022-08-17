@@ -6,8 +6,9 @@ import com.serviback.prueba.repository.PersonaRepository;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-
+@Service
 public class PersonaService implements IPersonaService {
     
     @Autowired
@@ -33,5 +34,9 @@ public class PersonaService implements IPersonaService {
         return persoRepo.findById(id).orElse(null);
     }
     
+    @Override
+    public void editarPersona(Persona per) {
+       persoRepo.save(per);
+    }
     
 }
